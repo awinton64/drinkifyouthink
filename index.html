@@ -32,7 +32,13 @@
             visibility: visable;
         }
 
-        .button {
+        .button { 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 80%;
+            flex: 1 1 auto;  
+            font-size: x-large;  
             background-color: #000000;
             color: #FFFFFF;
             padding: 10px;
@@ -69,13 +75,16 @@
             font-size: 75px;
         }
         #buttonHolder {
-            padding-top: 25px;
-            bottom: 30px;
+            display: flex;
+        }
+        #buttonBackground {
+            padding-top: 10px;
+            bottom: 10px;
             position: fixed;
             bottom: 0;
             right: 0;
             width: 100%;
-            background-color: white;
+            /* /* background-color: white; */
         }
 
         
@@ -101,11 +110,14 @@
                 <div id="gameAction">Click next card below to begin</div>
             </div>
         </div>
-        <div id="buttonHolder" class="center">
-            <button id="nextCardButton" class="button" onclick="showNextCard()">Next card</button>
-            <button id="shuffleDeckButton" class="button" onclick="shuffleDeck()">Shuffle deck</button>
-            <button id="fullscreenButton" class="button" onclick=" toggleFullscreen()">Full-screen</button>
+        <div id="buttonBackground">
+            <div id="buttonHolder" class="center">
+                <button id="nextCardButton" class="button" onclick="showNextCard()">Next card</button>
+                <button id="shuffleDeckButton" class="button" onclick="shuffleDeck()">Shuffle deck</button>
+                <button id="fullscreenButton" class="button" onclick=" toggleFullscreen()">Full-screen</button>
+            </div>
         </div>
+
 
   </body>
   
